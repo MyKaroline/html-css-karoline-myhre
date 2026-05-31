@@ -1,0 +1,62 @@
+:root {
+	--logo: #0a3641;
+	--light-grey: #e7dfda;
+	--dark-grey: #1a1919;
+	--brown: #7c5931;
+	--dark-brown: #231a07;
+}
+
+html,
+body {
+	margin: 0;
+}
+
+html {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+nav {
+	padding: 7px 24px;
+	background-color: var(--light-grey);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+nav img {
+	width: auto;
+	height: 105px;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	display: flex;
+	gap: 87px;
+	color: var(--logo);
+}
+
+nav ul a:hover {
+	text-decoration: underline;
+}
+
+.cart-btn {
+	padding: 10px 16px;
+	border: 1px solid currentColor;
+}
+
+.cart-btn:hover {
+	transition: all 0.15s ease-in-out;
+	color: white;
+	background-color: var(--logo);
+	text-decoration: none;
+}
