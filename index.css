@@ -1,0 +1,51 @@
+#hero {
+	background-image: url("public/hero.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 90vh;
+
+	position: relative;
+}
+
+#hero .btn {
+	position: absolute;
+	bottom: 20%;
+	right: 8%;
+	color: var(--light-grey);
+	background-color: var(--brown);
+}
+
+#hero .btn:hover {
+	color: var(--brown);
+	background-color: var(--light-grey);
+}
+
+.hero-box {
+	list-style: none;
+	padding: 0 84px;
+	margin: 0;
+
+	position: absolute;
+	top: 42px;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 80px;
+
+	color: var(--primary);
+	border: 1px solid currentColor;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 56px;
+
+	background-color: #ffffff10;
+	backdrop-filter: blur(7px);
+}
+
+.hero-box li {
+	padding-top: 0.2em; /* Fix text alignment */
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-family: "Josefin Sans";
+}

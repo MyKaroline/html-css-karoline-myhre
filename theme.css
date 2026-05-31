@@ -1,9 +1,15 @@
 :root {
-	--logo: #0a3641;
+	--primary: #0a3641;
 	--light-grey: #e7dfda;
 	--dark-grey: #1a1919;
 	--brown: #7c5931;
 	--dark-brown: #231a07;
+}
+
+html {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 }
 
 html,
@@ -11,8 +17,23 @@ body {
 	margin: 0;
 }
 
-html {
-	font-family: "Inter", sans-serif;
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Josefin Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
@@ -42,21 +63,30 @@ nav ul {
 	padding-left: 0;
 	display: flex;
 	gap: 87px;
-	color: var(--logo);
+	color: var(--primary);
+	font-weight: 500;
 }
 
 nav ul a:hover {
 	text-decoration: underline;
 }
 
-.cart-btn {
+.btn {
 	padding: 10px 16px;
 	border: 1px solid currentColor;
 }
 
-.cart-btn:hover {
+.btn:hover {
 	transition: all 0.15s ease-in-out;
+}
+
+.cart-btn:hover {
 	color: white;
-	background-color: var(--logo);
+	background-color: var(--primary);
 	text-decoration: none;
+}
+
+footer {
+	height: 295px;
+	background-color: var(--light-grey);
 }
