@@ -49,3 +49,29 @@
 	font-size: 2rem;
 	font-family: "Josefin Sans";
 }
+
+.image-container {
+	display: flex;
+	justify-content: flex-start;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-container img {
+	width: 100%;
+	max-width: 34%;
+	heigt: auto;
+	mix-blend-mode: multiply;
+	opacity: 0.9;
+}
+
+.image-container h1 {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	text-transform: uppercase;
+	color: #ffffff;
+	letter-spacing: 0.13em;
+	font-weight: 350;
+	margin-top: 60px;
+}
