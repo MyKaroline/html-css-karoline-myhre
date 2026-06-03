@@ -50,28 +50,48 @@
 	font-family: "Josefin Sans";
 }
 
-.image-container {
-	display: flex;
-	justify-content: flex-start;
-	background-color: rgba(0, 0, 0, 0.5);
+.gallery {
+	position: relative;
 }
 
-.image-container img {
-	width: 100%;
-	max-width: 34%;
-	heigt: auto;
-	mix-blend-mode: multiply;
-	opacity: 0.9;
-}
-
-.image-container h1 {
+.gallery .headline {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
+	margin-top: 80px;
+	z-index: 10;
+}
+
+.headline h1 {
 	white-space: nowrap;
 	text-transform: uppercase;
 	color: #ffffff;
 	letter-spacing: 0.13em;
 	font-weight: 350;
-	margin-top: 60px;
+	margin: 0;
+}
+
+.gallery .decor-line {
+	position: absolute;
+	width: 130px;
+	left: 42%;
+}
+
+.gallery-images {
+	display: grid;
+	height: 50vw;
+	grid-auto-flow: column;
+	grid-auto-rows: minmax(0, 1fr);
+	grid-auto-columns: 1fr;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.gallery-images img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: bottom;
+	mix-blend-mode: multiply;
+	opacity: 0.9;
 }
