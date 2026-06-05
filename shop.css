@@ -1,0 +1,31 @@
+main {
+	padding: 6rem;
+}
+
+main h1 {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 4rem;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 300px);
+	gap: 6rem 9rem;
+}
+
+.products li img {
+	height: 380px;
+}
+
+.products li h2 {
+	font-family: var(--font-body);
+	font-weight: 500;
+	font-size: 20px;
+	margin-bottom: 1rem;
+}
+.products .btn {
+	margin-top: 1rem;
+	background-color: black;
+	color: #ffffff;
+}
