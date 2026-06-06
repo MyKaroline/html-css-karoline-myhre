@@ -12,10 +12,13 @@ main h1 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 300px);
 	gap: 6rem 9rem;
+	max-width: 100%;
 }
 
 .products li img {
-	height: 380px;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
 }
 
 .products li h2 {
@@ -40,5 +43,11 @@ main h1 {
 
 	.products {
 		justify-content: center;
+	}
+
+	.products li img {
+		margin: auto;
+		height: 300px;
+		width: 300px;
 	}
 }
