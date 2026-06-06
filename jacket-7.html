@@ -12,7 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="theme.css" />
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="products.css" />
 	</head>
 	<body>
 		<nav>
@@ -29,53 +29,39 @@
 				</li>
 			</ul>
 		</nav>
-		<main>
-			<section id="hero">
-				<ul class="hero-box">
-					<li>Durable</li>
-					<li>Weatherproof</li>
-					<li>Affordable</li>
-				</ul>
+		<main itemscope itemtype="https://schema.org/Product">
+			<img
+				itemprop="image"
+				src="public/RainyDays_Jacket7.jpg"
+				alt="Heathered olive-green sweater-knit fleece jacket with a full front zip, stand-up collar, raglan sleeves, and two zippered hand pockets."
+			/>
+			<div class="product">
+				<h1 itemprop="name">Trailside Sweater-Knit Fleece Jacket</h1>
+				<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+					<span itemprop="price">60</span>
+					<span itemprop="priceCurrency" content="USD">$</span>
+				</div>
+				<div itemprop="description">
+					<p>
+						The Trailside fleece jacket brings cozy sweater-knit style to cool-weather days, with a soft
+						heathered olive face and a warm fleece backing that traps heat without the bulk. A full-length
+						zip and stand-up collar seal out the chill on crisp morning walks.
+					</p>
 
-				<a href="shop.html" class="btn">Shop Jackets</a>
-			</section>
-			<section class="gallery">
-				<div class="headline">
-					<h1>Jackets for every condition</h1>
-					<svg class="decor-line" viewBox="0 0 276 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M5.00055 15.0004C65.2207 7.45413 202.729 -3.1106 271.001 15.0004"
-							stroke="white"
-							stroke-width="10"
-							stroke-linecap="round"
-						/>
-					</svg>
+					<p>
+						Two zippered hand pockets keep your phone and keys secure, while the relaxed raglan cut layers
+						easily over a tee or under a shell. Made from recycled fibres, it's an everyday midlayer that's
+						as at home on the trail as it is around town.
+					</p>
 				</div>
-
-				<div class="gallery-images">
-					<img src="public/snow.jpg" alt="" />
-					<img src="public/beach.jpg" alt="" />
-					<img src="public/forest.jpg" alt="" />
+				<div class="btn-group" role="radiogroup">
+					<button role="radio" aria-checked="false">S</button>
+					<button role="radio" aria-checked="true">M</button>
+					<button role="radio" aria-checked="false">L</button>
+					<button role="radio" aria-checked="false">XL</button>
 				</div>
-			</section>
-			<section class="gallery">
-				<div class="gallery-images">
-					<img src="public/closehand.jpg" alt="" />
-					<div class="box box-light">
-						<h2><span class="brown">Premium</span> quality</h2>
-						<p><span class="primary">Affordable</span> price</p>
-					</div>
-				</div>
-			</section>
-			<section class="gallery">
-				<div class="gallery-images">
-					<div class="box box-dark">
-						<h2>Perfectly comfortable</h2>
-						<p>Our patented polyester and wool mix keep you both warm and comfortable</p>
-					</div>
-					<img src="public/closejacket.jpg" alt="" />
-				</div>
-			</section>
+				<a href="coming-soon.html" class="btn add-btn">Add to cart</a>
+			</div>
 		</main>
 		<footer>
 			<div style="grid-area: links-a">

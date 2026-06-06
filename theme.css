@@ -67,6 +67,14 @@ a {
 	text-decoration: inherit;
 }
 
+p a {
+	text-decoration: underline;
+}
+
+button {
+	cursor: pointer;
+}
+
 .list-reset {
 	list-style: none;
 	margin: 0;
@@ -83,6 +91,32 @@ nav ul {
 
 nav ul a:hover {
 	text-decoration: underline;
+}
+
+.btn-group {
+	display: flex;
+	padding: 2px;
+	width: min-content;
+	gap: 2px;
+	background-color: var(--light-grey);
+}
+
+.btn-group button {
+	border: none;
+	background-color: var(--brown);
+	color: white;
+	padding: 0;
+	width: 50px;
+	height: 32px;
+	opacity: 0.5;
+}
+
+.btn-group button[aria-checked="true"] {
+	opacity: 1;
+}
+
+.btn-group button:hover {
+	opacity: 0.8;
 }
 
 .btn {

@@ -12,7 +12,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="theme.css" />
-		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="products.css" />
 	</head>
 	<body>
 		<nav>
@@ -29,53 +29,39 @@
 				</li>
 			</ul>
 		</nav>
-		<main>
-			<section id="hero">
-				<ul class="hero-box">
-					<li>Durable</li>
-					<li>Weatherproof</li>
-					<li>Affordable</li>
-				</ul>
-
-				<a href="shop.html" class="btn">Shop Jackets</a>
-			</section>
-			<section class="gallery">
-				<div class="headline">
-					<h1>Jackets for every condition</h1>
-					<svg class="decor-line" viewBox="0 0 276 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M5.00055 15.0004C65.2207 7.45413 202.729 -3.1106 271.001 15.0004"
-							stroke="white"
-							stroke-width="10"
-							stroke-linecap="round"
-						/>
-					</svg>
+		<main itemscope itemtype="https://schema.org/Product">
+			<img
+				itemprop="image"
+				src="public/RainyDays_Jacket2.jpg"
+				alt="Gray lightweight performance jacket with a full front zipper, stand-up collar, long sleeves, adjustable cuffs, and an athletic fit."
+			/>
+			<div class="product">
+				<h1 itemprop="name">AeroShield Performance Jacket</h1>
+				<div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+					<span itemprop="price">85</span>
+					<span itemprop="priceCurrency" content="USD">$</span>
 				</div>
-
-				<div class="gallery-images">
-					<img src="public/snow.jpg" alt="" />
-					<img src="public/beach.jpg" alt="" />
-					<img src="public/forest.jpg" alt="" />
+				<div itemprop="description">
+					<p>
+						The AeroShield Performance Jacket is a lightweight outer layer designed for active days when
+						protection and comfort are equally important. Its streamlined fit and breathable construction
+						help regulate temperature while providing reliable defense against wind and light weather
+						conditions.
+					</p>
+					<p>
+						Featuring a full-length front zipper, stand-up collar, and adjustable cuffs, this versatile
+						jacket is built for cycling, running, and everyday outdoor adventures. The sleek textured design
+						delivers a modern athletic look that performs as well as it looks.
+					</p>
 				</div>
-			</section>
-			<section class="gallery">
-				<div class="gallery-images">
-					<img src="public/closehand.jpg" alt="" />
-					<div class="box box-light">
-						<h2><span class="brown">Premium</span> quality</h2>
-						<p><span class="primary">Affordable</span> price</p>
-					</div>
+				<div class="btn-group" role="radiogroup">
+					<button role="radio" aria-checked="false">S</button>
+					<button role="radio" aria-checked="true">M</button>
+					<button role="radio" aria-checked="false">L</button>
+					<button role="radio" aria-checked="false">XL</button>
 				</div>
-			</section>
-			<section class="gallery">
-				<div class="gallery-images">
-					<div class="box box-dark">
-						<h2>Perfectly comfortable</h2>
-						<p>Our patented polyester and wool mix keep you both warm and comfortable</p>
-					</div>
-					<img src="public/closejacket.jpg" alt="" />
-				</div>
-			</section>
+				<a href="coming-soon.html" class="btn add-btn">Add to cart</a>
+			</div>
 		</main>
 		<footer>
 			<div style="grid-area: links-a">
