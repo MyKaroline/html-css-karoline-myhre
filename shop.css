@@ -29,3 +29,16 @@ main h1 {
 	background-color: black;
 	color: #ffffff;
 }
+
+@media screen and (max-width: 800px) {
+	main {
+		padding: 2.5rem 2rem;
+	}
+	main h1 {
+		text-align: center;
+	}
+
+	.products {
+		justify-content: center;
+	}
+}

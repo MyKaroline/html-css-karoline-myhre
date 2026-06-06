@@ -50,6 +50,19 @@
 	font-family: "Josefin Sans";
 }
 
+@media screen and (max-width: 800px) {
+	.hero-box {
+		padding: 1rem 2rem;
+		gap: 1rem;
+		flex-direction: column;
+		height: auto;
+		justify-content: center;
+	}
+	.hero-box li {
+		font-size: 1.5rem;
+	}
+}
+
 .gallery {
 	position: relative;
 }
@@ -84,6 +97,32 @@
 	grid-auto-rows: minmax(0, 1fr);
 	grid-auto-columns: 1fr;
 	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+	.gallery-images {
+		height: 100vh;
+	}
+
+	.headline {
+		width: 260px;
+	}
+
+	.gallery .decor-line {
+		position: absolute;
+		top: 56px;
+		left: 49%;
+		transform: translateX(-50%);
+	}
+
+	.headline h1 {
+		white-space: wrap;
+		text-align: center;
+	}
+
+	.gallery:not(.with-box) .gallery-images > :not(:first-child) {
+		display: none;
+	}
 }
 
 .gallery-images > * {
@@ -145,4 +184,29 @@
 	line-height: 1;
 	font-weight: 400;
 	color: #ffffff;
+}
+
+@media screen and (max-width: 800px) {
+	.with-box .gallery-images {
+		display: flex;
+		height: auto;
+		flex-direction: column;
+	}
+
+	.with-box .gallery-images > .box {
+		order: 1;
+	}
+
+	.with-box .gallery-images > * {
+		aspect-ratio: 1 / 1;
+	}
+
+	.box h2,
+	.box p {
+		font-size: 2.5rem;
+	}
+
+	.box-dark p {
+		font-size: 1.5rem;
+	}
 }

@@ -42,3 +42,18 @@ main img {
 .product > :not(:first-child) {
 	margin-top: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+	main {
+		padding: 2.5rem 2rem;
+		flex-direction: column;
+	}
+
+	main img {
+		max-width: 100%;
+	}
+
+	.product {
+		max-width: 100%;
+	}
+}
