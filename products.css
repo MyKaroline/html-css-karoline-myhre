@@ -10,7 +10,7 @@ main {
 }
 
 main h1 {
-	font-size: 20;
+	font-size: 20px;
 	font-weight: 400;
 	font-family: var(--font-body);
 }
